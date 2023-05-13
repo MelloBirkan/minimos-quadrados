@@ -1,5 +1,5 @@
-# Define a função MMQ que implementa o método dos mínimos quadrados
-def MMQ(x, y):
+# Define a função metodo_minimos_quadrados que implementa o método dos mínimos quadrados
+def metodo_minimos_quadrados(x, y):
   # Calcula a quantidade de elementos nas listas x e y
   n = len(x)
 
@@ -22,8 +22,8 @@ def MMQ(x, y):
 
 # Define a função que imprime a equação da reta
 def printarResultado (x, y, n_exercicio):
-  # Chama a função MMQ para calcular a inclinação e a interceptação
-  inclinacao, interceptacao = MMQ(x, y)
+  # Chama a função metodo_minimos_quadrados para calcular a inclinação e a interceptação
+  inclinacao, interceptacao = metodo_minimos_quadrados(x, y)
   print(f"Exercicio {n_exercicio}:")
   # Verifica se a interceptação é negativa para imprimir corretamente o sinal
   if interceptacao < 0:
